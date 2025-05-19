@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control Vehículo IoT</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <h1>Control de Vehículo IoT</h1>
+
+  <!-- Controles -->
+  <div class="controls">
+
+    <!-- Fila 1 -->
+    <div class="row">
+      <button class="btn teal" data-action="VUELTA_IZQ">⬅️ Vuelta Izquierda</button>
+      <button class="btn purple" data-action="AVANZAR">⬆️ Avanzar</button>
+      <button class="btn teal" data-action="VUELTA_DER">➡️ Vuelta Derecha</button>
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="row">
+      <button class="btn orange" data-action="GIRO_360_IZQ">🔄 Giro 360° Izq</button>
+      <button class="btn yellow" data-action="GIRO_90_IZQ">↪️ Giro 90° Izq</button>
+      <button class="btn red" data-action="DETENER">⏹️ Detener</button>
+      <button class="btn yellow" data-action="GIRO_90_DER">↩️ Giro 90° Der</button>
+      <button class="btn orange" data-action="GIRO_360_DER">🔁 Giro 360° Der</button>
+    </div>
+
+    <!-- Fila 3 -->
+    <div class="row">
+      <button class="btn teal" data-action="VUELTA_IZQ">⬅️ Vuelta Izquierda</button>
+      <button class="btn red" data-action="RETROCEDER">⬇️ Retroceder</button>
+      <button class="btn teal" data-action="VUELTA_DER">➡️ Vuelta Derecha</button>
+    </div>
+  </div>
+
+  <!-- Estado del movimiento -->
+  <div class="movement">
+    <p>Movimiento Actual:</p>
+    <div id="estadoMovimiento">INACTIVO</div>
+  </div>
+
+  <!-- Historial -->
+  <div class="movement">
+    <p>Historial de Órdenes:</p>
+    <div id="historial">
+      <div class="text-muted fst-italic">Presione algún botón para comenzar...</div>
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <footer>
+    Desarrollado por Fernando Garcia Barragan
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
